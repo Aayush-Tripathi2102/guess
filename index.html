@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bomb Decode</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .title {
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            .title {
+                font-size: 1.5rem;
+            }
+            .image-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .image-container img {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Guess the Location</h1>
+    <div class="image-container">
+        <img src="assets/clue1.jpg" alt="Clue 1">
+        <img src="assets/clue2.jpg" alt="Clue 2">
+        <img src="assets/clue3.jpg" alt="Clue 3">
+        <img src="assets/clue4.jpg" alt="Clue 4">
+    </div>
+</body>
+</html>
